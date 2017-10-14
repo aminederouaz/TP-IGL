@@ -47,7 +47,52 @@ public class Vector {
 		System.out.println("");
 	}
 	
+	public void triTab()
+	{
+		int i,j,sub;
+		
+		for (j=0;j<this.tab.length-1;j++)
+		{
+			
+			for (i=0;i<this.tab.length-1;i++)
+			{
+				if (tab[i]>tab[i+1])
+				{ 
+					sub=tab[i+1];
+					tab[i+1]=tab[i];
+					tab[i]=sub;	
+				}
+					
+			}
+			
+		}
+	}
 	
+	public int Min()
+	{
+		int i,minimum;
+		minimum=tab[0];
+		
+		for (i=0;i<tab.length;i++)
+		{
+			if (tab[i]<minimum)
+				minimum=tab[i];
+		}
+		return minimum;
+	}
 	
-	
+	public int Max()
+	{
+		int i,maximum;
+		maximum=tab[0];
+		
+		for (i=0;i<tab.length;i++)
+		{
+			if (tab[i]>maximum)
+				maximum=tab[i];
+		}
+		return maximum;
+	}
+
+		
 }
