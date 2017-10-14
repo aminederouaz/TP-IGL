@@ -11,10 +11,12 @@ public class Vector {
 	{
 		this.tab=tab;		
 	}
-	public static void sommer(int tab1[],int tab2[],int tab3[]) {
-     if (tab1.length!=tab2.length) System.out.println("Error! Vectors With Different Size!");
-     else for(int i=0;i<tab1.length;i++ ){
-    	 tab3[i]=tab1[i]+tab2[i];     }
+	
+	public static void sommer(Vector tab1,Vector tab2,Vector tab3)
+	{
+	     if (tab1.tab.length!=tab2.tab.length) System.out.println("Error! Vectors With Different Size!");
+	     else for(int i=0;i<tab1.tab.length;i++ ){
+	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i];     }
 	}
 	
 	
