@@ -2,7 +2,7 @@ public class Vector {
 	
 	private int tab[];
 	
-	public Vector (int taille)
+	public Vector (int taille )
 	{
 		 this.tab=new int[taille];
 	}
