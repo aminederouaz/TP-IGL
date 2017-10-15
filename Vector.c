@@ -9,7 +9,7 @@ public class Vector {
 	
 	public void insert(int tab[])
 	{
-		this.tab=tab;		
+		this.tab=tab ; //test	 
 	}
 	
 	public static void sommer(Vector tab1,Vector tab2,Vector tab3)
