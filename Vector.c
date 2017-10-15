@@ -9,10 +9,10 @@ public class Vector {
 	
 	public void insert(int tab[])
 	{
-		this.tab=tab ; //test	 
+		this.tab    =    tab ; //test	 
 	}
 	
-	public static void sommer(Vector tab1,Vector tab2,Vector tab3)
+	public static void addition(Vector tab1,Vector tab2,Vector tab3)
 	{
 	     if (tab1.tab.length!=tab2.tab.length) System.out.println("Error! Vectors With Different Size!");
 	     else for(int i=0;i<tab1.tab.length;i++ ){
