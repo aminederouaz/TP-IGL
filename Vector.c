@@ -25,7 +25,7 @@ public class Vector {
 		for(int i=0;i<this.tab.length;i++ )
 			tabTemp[i]=this.tab[tabTemp.length-i-1];  
 		
-		this.tab=tabTemp;
+		this.tab = tabTemp;
 			
 	}
 	
