@@ -16,7 +16,7 @@ public class Vector {
 	{
 	     if (tab1.tab.length!=tab2.tab.length) System.out.println("Error! Vectors With Different Size!");
 	     else for(int i=0;i<tab1.tab.length;i++ ){
-	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i];  
+	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i]; // this is the line where i want to create the conflict  
 	          tab2=tab2}
 	}
 	
