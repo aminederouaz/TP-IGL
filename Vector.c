@@ -16,7 +16,7 @@ public class Vector {
 	{
 	     if (tab1.tab.length!=tab2.tab.length) System.out.println("Error! Vectors With Different Size!");
 	     else for(int i=0;i<tab1.tab.length;i++ ){
-	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i];  
+	    	 ligne aboslument vide et ne sert a rien  
 	          tab2=tab2}
 	}
 	
