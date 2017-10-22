@@ -7,7 +7,7 @@ public class Vector {
 
 	private int tab[];
 	private int Min;
-	private int Max;
+	private int Maxm;
 	
 	
 	public Vector (int taille)
