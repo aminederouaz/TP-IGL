@@ -33,7 +33,7 @@ public class Vector {
 		for (i=0;i<tab.length;i++)
 		{
 			System.out.print(tab[i]+" |");
-		}//another differentcomment
+		}//another different comment number two
 		System.out.println();
 	}
 
