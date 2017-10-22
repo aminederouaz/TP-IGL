@@ -59,7 +59,7 @@ public class Vector {
 	}
 	
 
-	public void MinMax()
+	public void MinMax() //this is a comment that shoyld be deleted
 	{
 		int i,minimum,maximum;
 		minimum=tab[0];
