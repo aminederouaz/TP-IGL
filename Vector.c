@@ -1,43 +1,30 @@
+package Test;
+
+
 public class Vector {
 	
-	private int tab[];
 	
-	public Vector (int taille )
+
+	private int tab[];
+	private int Min;
+	private int Max;
+	
+	
+	public Vector (int taille)
 	{
 		 this.tab=new int[taille];
 	}
 	
+	public int[] getTab(){
+	return this.tab;
+	}
+	
+	
 	public void insert(int tab[])
 	{
-		this.tab=tab ; //test	 
+		this.tab=tab;		
 	}
-	
-	public static void sommer(Vector tab1,Vector tab2,Vector tab3)
-	{
-	     if (tab1.tab.length!=tab2.tab.length) System.out.println("Error! Vectors With Different Size!");
-	     else for(int i=0;i<tab1.tab.length;i++ ){
-	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i]; // this is the line where i want to create the conflict  
-	          tab2=tab2}
-	}
-	
-	
-	public void Inverer (){
-		int tabTemp[]=new int[this.tab.length];
-		for(int i=0;i<this.tab.length;i++ )
-			tabTemp[i]=this.tab[tabTemp.length-i-1];  
-		
-		this.tab=tabTemp;
-			
-	}
-	
-	public void mul2(){
-		for(int i=0;i<this.tab.length;i++ ){
-			this.tab[i]=this.tab[i]*2;
-			
-		}
-		
-		
-	}
+
 	
 	public void affichar()
 	{
@@ -47,9 +34,9 @@ public class Vector {
 		{
 			System.out.print(tab[i]+" |");
 		}
-		System.out.println("");
+		System.out.println();
 	}
-	
+
 	public void triTab()
 	{
 		int i,j,sub;
@@ -71,31 +58,54 @@ public class Vector {
 		}
 	}
 	
-	public int Min()
+
+	public void MinMax()
 	{
-		int i,minimum;
+		int i,minimum,maximum;
 		minimum=tab[0];
+		maximum=tab[0];
 		
 		for (i=0;i<tab.length;i++)
 		{
 			if (tab[i]<minimum)
 				minimum=tab[i];
-		}
-		return minimum;
-	}
-	
-	public int Max()
-	{
-		int i,maximum;
-		maximum=tab[0];
-		
-		for (i=0;i<tab.length;i++)
-		{
+			
 			if (tab[i]>maximum)
 				maximum=tab[i];
 		}
-		return maximum;
+		this.Min=minimum;
+		this.Max=maximum;
+	}
+	
+
+	public int getMin() {
+		return Min;
 	}
 
-		
+	public int getMax() {
+		return Max;
+	}
+
+	public static void sommer(Vector tab1,Vector tab2,Vector tab3) {
+	     if (tab1.tab.length!=tab2.tab.length) throw new ArithmeticException();
+	     else for(int i=0;i<tab1.tab.length;i++ ){
+	    	 tab3.tab[i]=tab1.tab[i]+tab2.tab[i];     }
+		}
+
+	public void Inverer (){
+			int tabTemp[]=new int[this.tab.length];
+			for(int i=0;i<this.tab.length;i++ )
+				tabTemp[i]=this.tab[tabTemp.length-i-1];  
+			
+			this.tab=tabTemp;
+				
+		}
+
+	public void mul2(){
+			for(int i=0;i<this.tab.length;i++ ){
+				this.tab[i]=this.tab[i]*2;
+				
+			}			
+		}
+
 }
