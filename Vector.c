@@ -59,7 +59,7 @@ public class Vector {
 	}
 	
 
-	public void MinMax()
+	public void qsf sf
 	{
 		int i,minimum,maximum;
 		minimum=tab[0];
