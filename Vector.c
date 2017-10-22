@@ -18,6 +18,7 @@ public class Vector {
 	public int[] getTab(){
 	return this.tab;
 	}
+	//ajouter quelque chose ici 
 	
 	this is just another useless line
 	public void insert(int tab[])
