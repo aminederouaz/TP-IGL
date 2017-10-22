@@ -19,7 +19,7 @@ public class Vector {
 	return this.tab;
 	}
 	
-	
+	this is just another useless line
 	public void insert(int tab[])
 	{
 		this.tab=tab;		
