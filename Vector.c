@@ -19,7 +19,7 @@ public class Vector {
 	    	 ligne aboslument vide et ne sert a rien  
 	          tab2=tab2}
 	}
-	
+	//line number 22 should be always emptyor commented
 	
 	public void Inverer (){
 		int tabTemp[]=new int[this.tab.length];
