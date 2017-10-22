@@ -33,7 +33,7 @@ public class Vector {
 	public void mul2(){
 		for(int i=0;i<this.tab.length;i++ ){
 			this.tab[i]=this.tab[i]*2;
-			
+			//comment
 		}
 		
 		
